@@ -3,3 +3,8 @@ Description=Shows network status by blinking the CHIP's LED
 
 [Service]
 ExecStart=/usr/local/bin/network-status-led.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
