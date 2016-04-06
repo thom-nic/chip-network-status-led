@@ -1,0 +1,5 @@
+[Unit]
+Description=Shows network status by blinking the CHIP's LED
+
+[Service]
+ExecStart=/usr/local/bin/network-status-led.sh
